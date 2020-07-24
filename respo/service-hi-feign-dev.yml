@@ -1,5 +1,3 @@
-server:
-  port: 8884
 feign:
   hystrix:
     enabled: true
