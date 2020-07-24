@@ -2,8 +2,6 @@ server:
   port: 8882
   shutdown: graceful
 spring:
-  application:
-    name: service-hi
   sleuth:
     sampler:
       probability: 1.0
@@ -11,12 +9,6 @@ spring:
     loadbalancer:
       ribbon:
         enabled: false
-    config:
-      label: master
-      profile: dev
-      discovery:
-        enabled: true
-        service-id: service-config
     bus:
       trace:
         enabled: true
@@ -27,10 +19,6 @@ spring:
     password: guest
   zipkin:
     base-url: http://localhost:9411
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8881/eureka/
 management:
   endpoints:
     web:
