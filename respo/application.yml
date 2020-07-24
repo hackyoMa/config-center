@@ -1,5 +1,3 @@
-server:
-  shutdown: graceful
 spring:
   sleuth:
     sampler:
