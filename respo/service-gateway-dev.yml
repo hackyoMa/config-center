@@ -1,5 +1,3 @@
-server:
-  port: 8885
 spring:
   cloud:
     gateway:
