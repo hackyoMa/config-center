@@ -1,5 +1,3 @@
-server:
-  port: 8887
 spring:
   thymeleaf:
     check-template-location: false
